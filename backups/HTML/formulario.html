@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/formulario.css">
+  <title>Formulário</title>
+</head>
+
+<body>
+
+  <form id="formulario">
+
+    <div class="progresso">
+      <span id="contador">1 de 7</span>
+      <div class="barra-fundo">
+        <div class="barra-preenchimento" id="barra"></div>
+      </div>
+    </div>
+
+    <div class="step ativa">
+      <label for="nome">Qual o seu nome e sobrenome?</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+      <button type="button" class="btn-proximo">Próximo</button>
+    </div>
+
+    <div class="step">
+      <label for="whatsapp">Qual o seu Whatsapp?</label>
+      <input type="tel" id="whatsapp" name="whatsapp" placeholder="Seu Whatsapp" required>
+      <button type="button" class="btn-proximo">Próximo</button>
+    </div>
+
+    <div class="step">
+      <label for="email">Qual o seu melhor e-mail?</label>
+      <input type="email" id="email" name="email" placeholder="Seu melhor e-mail" required>
+      <button type="button" class="btn-proximo">Próximo</button>
+    </div>
+
+    <div class="step">
+      <label for="cargo">Qual opção descreve melhor o seu cargo?</label>
+      <select id="cargo" name="cargo" required>
+        <option value="" disabled selected>Selecione uma opção</option>
+        <option value="Ceo">Ceo</option>
+        <option value="Diretor">Diretor</option>
+        <option value="Gerente">Gerente</option>
+        <option value="Supervisor">Supervisor</option>
+        <option value="Colaborador">Colaborador</option>
+      </select>
+      <button type="button" class="btn-proximo">Próximo</button>
+    </div>
+
+    <div class="step">
+      <label for="nome-empresa">Qual o nome da sua empresa?</label>
+      <input type="text" id="nome-empresa" name="nome-empresa" placeholder="Nome da sua empresa" required>
+      <button type="button" class="btn-proximo">Próximo</button>
+    </div>
+
+    <div class="step">
+      <label for="instagram">Qual o @ do Instagram da sua empresa?</label>
+      <input type="text" id="instagram" name="instagram" placeholder="Seu @ no Instagram" required>
+      <button type="button" class="btn-proximo">Próximo</button>
+    </div>
+
+    <div class="step">
+      <label for="faturamento">Qual o faturamento mensal da sua empresa?</label>
+      <select id="faturamento" name="faturamento" required>
+        <option value="" disabled selected>Selecione uma opção</option>
+        <option value="Até 50 mil">Até 50 mil</option>
+        <option value="De 51 mil à 100 mil">De 51 mil à 100 mil</option>
+        <option value="De 101 mil à 400 mil">De 101 mil à 400 mil</option>
+        <option value="De 401 mil à 1 milhão">De 401 mil à 1 milhão</option>
+        <option value="Acima de 1 milhão">Acima de 1 milhão</option>
+      </select>
+      <button type="button" class="btn-enviar">Enviar</button>
+    </div>
+
+
+  </form>
+
+
+</body>
+
+</html>
